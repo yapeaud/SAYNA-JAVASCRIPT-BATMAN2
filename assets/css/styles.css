@@ -1,0 +1,499 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap'); */
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-Regular.ttf');
+    font-family: 'Space-Grotesk';
+    src: url('../fonts/SpaceGrotesk-Medium.ttf');
+}
+
+:root {
+    --yellow-color: #ffff00;
+    --light-yellow-color: #f8f184;
+    --steel-blue-color: #19587d;
+    --garnet-red-color: #b11313;
+    --charcoal-black-color: #0d0e09;
+    --light-gray-color: #c4c4c4;
+    --white-color: #ffffff;
+    --light-white-color: #ffffff51;
+    --black-color: #000000;
+    --gradient-red: #89000978;
+    --gradient-white: #eddebf67;
+    --gradient-blue: #19587d8b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Rajdhani';
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 36px;
+}
+
+button{
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: var(--charcoal-black-color);
+    color: white;
+    font-family: 'Space-Grotesk';
+    font-weight: 300;
+}
+
+/* DESIGNE DU MENU DE NEVIGATION */
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--light-white-color);
+    margin: 20px auto; /* Marges haut et bas */
+    width: 90%; /* Largeur de 50% de la page */
+}
+
+.vertical-left{
+    border-left: 2px solid var(--light-white-color);
+    height: 4080px;
+    position: absolute;
+    left: 65px;
+}
+
+.vertical-right{
+    border-left: 2px solid var(--light-white-color);
+    height: 4080px;
+    position: absolute;
+    right: 66px;
+}
+
+/* nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul a{
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Rajdhani';
+    text-decoration: none;
+}
+nav ul a:hover{
+    color: var(--yellow-color);
+    text-decoration: underline;
+} */
+.navbar {
+    display: flex;
+    margin-left: 50px;
+    color: var(--white-color);
+}
+
+.navbar .logo img {
+    padding-top: 35px;
+    padding-left: 82px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 750px;
+    list-style-type: none;
+}
+
+.navbar ul a{
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Rajdhani';
+    text-decoration: none;
+}
+.navbar li {
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
+.navbar li a.active {
+    text-decoration: underline;
+}
+
+
+/* DESIGNE DE LA SECTION HERO */
+
+#hero{
+    background-image: url('../images/Illustrations/Bathome1.png');
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#hero .titre{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg, var(--gradient-white), var(--gradient-red)
+    );
+    box-shadow: var(--black-color) 15px 15px 50px;
+}
+
+.btn:hover{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg, rgba(var(--gradient-red), 0.2), rgba(var(--gradient-white), 1)
+    );
+    box-shadow: var(--black-color) 15px 15px 50px;
+    opacity: 1;
+}
+
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 450px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 14px;
+    top: 230px;
+}
+
+.scroll .social{
+    margin-top: 15px;
+}
+
+/* DESIGNE DE LA SECTION BATMAN PERSONNAGE*/
+
+#batman-cinema{
+    margin-top: 300px;
+}
+
+#batman-nemesis , #batman-allies, #batman-Justice-league{
+    margin-top: 20px;
+}
+
+#batman-Justice-league{
+    margin-top: 100px;
+}
+
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.batman-item {
+    width: 300px;
+}
+
+.batman-item img{
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.batman-item img:hover{
+    transform: scale(1.2);
+}
+
+#batman-cinema .titre, #batman-nemesis .titre, #batman-allies .titre, #batman-Justice-league .titre{
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinema .description, #batman-nemesis .description, #batman-allies .description, #batman-Justice-league .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 100%;
+    font-size: 21px;
+}
+
+#batman-cinema .personnage-info,  #batman-nemesis .personnage-info, #batman-allies .personnage-info{
+    text-align: center;
+}
+
+/* DESIGNE DE LA SECTION NÉMÉSIS */
+
+#batman-nemesis .img-batman-nemesis{
+    width: 130px;
+    position: relative;
+    top: 70px;
+    left: 90px;
+}
+
+/* DESIGNE DE LA SECTION  ALLIES */
+
+.bathome12{
+    width: 400px;
+    float: right;
+    margin-top: -230px;
+}
+
+#batman-allies{
+    padding-top: 225px;
+}
+
+/* DESIGNE DE LA SECTION MULTIMÉDIA */
+
+.vertical-left-multimedia{
+    border-left: 2px solid var(--light-white-color);
+    height: 1195px;
+    position: absolute;
+    left: 65px;
+}
+
+.vertical-right-multimedia {
+    border-left: 2px solid var(--light-white-color);
+    height: 1195px;
+    position: absolute;
+    right: 66px;
+}
+
+#batman-multimedia .left{
+    position: relative;
+    top: 185px;
+    left: 100px;
+    background-color: var(--charcoal-black-color);
+    border: none;
+}
+#batman-multimedia .right{
+    float: right;
+    position: relative;
+    top: 185px;
+    right: 100px;
+    background-color: var(--charcoal-black-color);
+    border: none;
+}
+
+#batman-multimedia .slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#batman-multimedia .slider-image{
+    width: 100%;
+}
+
+#batman-multimedia .slider-content{
+    padding: 15px;
+    text-align: justify;
+    background: linear-gradient(80deg, var(--gradient-white), var(--gradient-blue));
+    border-radius: 0 15px 15px 0;
+}
+
+#batman-multimedia h3, #batman-multimedia p{
+    padding-top: 15px;
+}
+
+#batman-multimedia p{
+    font-size: 14px;
+}
+
+#batman-multimedia span{
+    color: var(--light-yellow-color);
+}
+
+/* DESIGNE DE LA SECTION PRENONS CONTACT */
+
+#batman-contact{
+    background: linear-gradient(80deg, var(--gradient-white), var(--gradient-blue));
+    margin-top: 140px;
+}
+
+#batman-contact h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#batman-contact form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[type="email"], textarea{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid var(--light-white-color);
+    background-color: transparent;
+    width: 100%;
+    color: var(--white-color);
+}
+
+#batman-contact .newsletter{
+    margin-bottom: 30px;
+}
+
+#batman-contact .batman-contact-new{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#batman-contact .actu{
+    margin-top: 25px;
+    width: 80%;
+}
+
+#batman-contact .iconfleche3{
+    margin-left: 75px;
+}
+
+#batman-contact .batman-contact-para-new {
+    border-bottom: 2px solid var(--light-white-color);
+}
+
+#batman-contact .batman-contact-para-news{
+    border-bottom: 2px solid var(--white-color);
+}
+
+#batman-contact .iconfleche3{
+    width: 16px;
+}
+
+#batman-contact .batman-contact-btn{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Rajdhani';
+}
+
+#batman-contact .btn-items{
+    text-decoration: none;
+    color: var(--white-color);
+    border: 1px solid;
+    font-size: 11px;
+    padding: 10px 20px;
+    border-image-slice: 1;
+    border-image-source:  linear-gradient(80deg, var(--gradient-white), var(--gradient-blue));
+}
+
+#batman-contact .batman-contact-msg{
+    text-align: center;
+}
+
+input[type="submit"]{
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    color: var(--white-color);
+    background: linear-gradient(80deg, var(--gradient-white), var(--gradient-red));
+    border: none;
+}
+
+/* DESIGNE DE LA SECTION RÉPLIQUE */
+#replique{
+    padding-top: 150px;
+}
+
+#replique .iconguillemets1{
+    padding-left: 200px;
+}
+
+#replique .citation{ 
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#replique .author{
+    color: var(--light-gray-color);
+    font-size: 12px;
+    text-align: center;
+}
+
+#replique .iconguillemets2{
+    position: relative;
+    top: 150px;
+    padding-left: 1045px;
+} 
+
+.svg-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.cercle{
+    fill: none;
+    stroke: var(--steel-blue-color);
+    stroke-width: 2px;
+}
+
+.cercle-rempli{
+    fill: var(--steel-blue-color);
+}
+
+/* DESIGNE DE LA SECTION FOOTER */
+
+footer{
+    text-align: center;
+    font-family: 'Space-Grotesk';
+    font-size: 12px;
+}
+
+.footer-icons{
+    padding-top: 50px;
+    padding-bottom: 50px;
+} 
+
+.iconx, .iconfb, .iconig, .icontw{
+    padding: 15px;
+} 
+
+.vertical-left-footer{
+    border-left: 2px solid var(--light-white-color);
+    height: 700px;
+    position: absolute;
+    left: 65px;
+}
+
+.vertical-right-footer {
+    border-left: 2px solid var(--light-white-color);
+    height: 700px;
+    position: absolute;
+    right: 66px;
+}
+
+/* SECTION PAGE GAME */
