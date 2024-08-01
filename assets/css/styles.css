@@ -497,3 +497,54 @@ footer{
 }
 
 /* SECTION PAGE GAME */
+#game{
+    background-image: url('../images/Illustrations/Batgame_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+}
+
+#game .content{
+    position: absolute;
+    left: 0px;
+    text-transform: uppercase;
+    font-family: 'Rajdhani';
+}
+
+#game .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 750px;
+}
+
+#quiz .quiz{
+    text-align: center;
+    margin-top: 200px;
+}
+
+#quiz h2{
+    font-family: 'Space-Grotesk';
+    text-transform: uppercase;
+}
+
+#quiz .batgame2{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#quiz .btn-quiz{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg, var(--gradient-white), var(--light-yellow-color)
+    );
+    box-shadow: var(--black-color) 15px 15px 50px;
+}
+
+#footer-game{
+    margin-top: 2170px;
+}
