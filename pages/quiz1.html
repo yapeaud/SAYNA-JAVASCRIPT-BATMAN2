@@ -11,10 +11,10 @@
     <div class="vertical-right"></div>
     <header id="game">
         <nav class="navbar">
-            <a href="../index.html " class="logo"><img src="../assets/images/Logos/logohome.png" alt="logo" ></a>
+            <a href="../index.html" class="logo"><img src="../assets/images/Logos/logohome.png" alt="logo" ></a>
             <ul>
                 <li><a href="../index.html">HOME</a></li>
-                <li><a href="./pages/game.html" class="active">GAME</a></li>
+                <li><a href="./game.html" class="active">GAME</a></li>
             </ul>
         </nav>
         <hr />
@@ -23,7 +23,7 @@
                 <h1 class="titre">LET’s play a little game...</h1>
             </div>
         </article>
-        <img class="fleche" src="../assets/images/Logos/flèche_down_header.png" alt="flèche down header" />
+        
     </header>
     <main>
             <!-- LES RESEAUX SOCIAUS ET LE SCROLLING -->
@@ -38,13 +38,25 @@
         <section id="quiz">
             <article class="quiz">
                 <div>
-                    <h2>connaissez vous bien le chevalier noir ?</h2>
+                    <h2>1/15</h2>
+                </div>
+                <div class="quiz-items">
+                    <div>
+                        <img src="../assets/images/Illustrations/Batgame_3.png" alt="">
+                    </div>
+                    <div>
+                        <form id="quizForm">
+                            <label>Quel est l’autre nom de l’Homme-Mystère ?</label>
+                            <div class="answer">
+                                <span class="answer-bg"><input type="checkbox" name="answer" id=""> <label for="">Le Sphinx</label></span>
+                                <span class="answer-bg answer-p"><input type="checkbox" name="answer" id=""> <label for="">Saphir</label></span>
+                                <span class="answer-bg"><input type="checkbox" name="answer" id=""> <label for="">Le Joker</label></span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div>
-                    <img src="../assets/images/Illustrations/Batgame_2.png" alt="" class="batgame2">
-                </div>
-                <div>
-                    <a class="btn-quiz" href="../pages/quiz1.html ">DEMARRER LE QUIZ</a>
+                    <a class="btn-quiz" href="./quiz2.html" id="nextQuestionBtn">QUESTION SUIVANTE</a>
                 </div>
             </article>
         </section>
@@ -69,5 +81,6 @@
             </div>
         </div>
     </footer>
+    <script src="../assets/js/scripts.js"></script>
 </body>
 </html>

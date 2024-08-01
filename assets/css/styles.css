@@ -545,6 +545,34 @@ footer{
     box-shadow: var(--black-color) 15px 15px 50px;
 }
 
+#quiz .quiz-items{
+    display: flex;
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#quiz form{
+    padding-top: 40px;
+}
+
+#quiz .answer{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 20px;
+}
+
+#quiz .answer-bg{
+    background-color: rgba(196, 196, 196, 0.5);
+    padding: 5px;
+}
+
+#quiz .answer-p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 #footer-game{
     margin-top: 2170px;
 }
