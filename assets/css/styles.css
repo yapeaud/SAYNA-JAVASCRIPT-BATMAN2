@@ -573,6 +573,57 @@ footer{
     margin-bottom: 8px;
 }
 
+#quiz .btn-quiz6{
+    position: relative;
+    top: 100px;
+}
+
+#quiz .batgame9{
+    position: absolute;
+    left: 250px;
+}
+
+#quiz .batgame9-1{
+    position: absolute;
+    right: 150px;
+    top: 1250px;
+}
+
+
+#quiz .btn-quiz9{
+    position: relative;
+}
+
+#quiz .batgame12{
+    position: relative;
+    bottom: 100px;
+}
+
+#quiz .batgame13{
+    position: absolute;
+    top: 1310px;
+}
+
+#quiz .batgame13-1{
+    position: absolute;
+    top: 1310px;
+    left: 270px;
+}
+
+#quiz .btn-quiz10{
+    position: relative;
+}
+
+#quiz .batgame15{
+    position: absolute;
+    top: 950px;
+    right: 400px;
+}
+
+#quiz .batgame16{
+    position: absolute;
+    top: 1310px;
+}
 #footer-game{
     margin-top: 2170px;
 }

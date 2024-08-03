@@ -1,3 +1,4 @@
+// ACTIVATION DU MENU DE NAVIGATION
 document.addEventListener('DOMContentLoaded', (event) => { // Attend que le DOM soit entièrement chargé
     const links = document.querySelectorAll('.navbar a'); // Sélectionne tous les liens dans la barre de navigation
 
@@ -9,6 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => { // Attend que le DOM 
     });
 });
 
+//
 document.getElementById('nextQuestionBtn').addEventListener('click', function(event) { // Ajoute un écouteur d'événement pour le bouton 'nextQuestionBtn'
     const checkboxes = document.querySelectorAll('input[name="answer"]'); // Sélectionne toutes les cases à cocher avec le nom 'answer'
     let isChecked = false; // Initialise une variable pour vérifier si une case est cochée
