@@ -624,6 +624,20 @@ footer{
     position: absolute;
     top: 1310px;
 }
+
+#quiz .batgame18{
+    position: relative;
+    bottom: 105px;
+}
+
+#quiz #quizForm{
+    margin-top: 75px;
+}
+
+#quiz .batgame20{
+    width: 400px;
+}
+
 #footer-game{
     margin-top: 2170px;
 }
