@@ -11,6 +11,25 @@ document.addEventListener('DOMContentLoaded', (event) => { // Attend que le DOM 
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollDownImage = document.querySelector(".scroll-down");
+    const scrollUpImage = document.querySelector(".scroll-up");
+
+    scrollDownImage.addEventListener("click", function() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        });
+    });
+
+    scrollUpImage.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+
 /* GERER L'INTERACTION AVEC LE BOUTON "Next Question" EN VÉRIFIANT QUE L'UTILISATEUR A SÉLECTIONNÉ AU MOINS UNE RÉPONSE AVANT DE PASSER À LA QUESTION SUIVANTE. */
 
 document.getElementById('nextQuestionBtn').addEventListener('click', function(event) { // Ajoute un écouteur d'événement pour le bouton 'nextQuestionBtn'
@@ -30,3 +49,4 @@ document.getElementById('nextQuestionBtn').addEventListener('click', function(ev
         window.location.href = './quiz2.html'; // Redirige vers la prochaine question si une réponse est sélectionnée
     }
 });
+

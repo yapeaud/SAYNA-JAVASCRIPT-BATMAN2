@@ -207,6 +207,14 @@ nav ul a:hover{
     margin-top: 15px;
 }
 
+.hover-effect {
+    transition: filter 0.3s ease;
+}
+
+.hover-effect:hover {
+    filter: sepia(1) saturate(10) hue-rotate(30deg);
+}
+
 /* DESIGNE DE LA SECTION BATMAN PERSONNAGE*/
 
 #batman-cinema{
@@ -640,4 +648,12 @@ footer{
 
 #footer-game{
     margin-top: 2170px;
+}
+
+.hover-effect {
+    transition: filter 0.3s ease;
+}
+
+.hover-effect:hover {
+    filter: sepia(1) saturate(10) hue-rotate(30deg);
 }
